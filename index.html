@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NitroGen</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style> -->
+    </head>
+
+    <body>
+        <div id="app">
+            <button v-on:click="generateNewCode">Generate!</button>
+            <p v-for="url in giftURLs">
+                [[ url.url ]]
+            </p>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
