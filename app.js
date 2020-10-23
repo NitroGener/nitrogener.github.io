@@ -5,9 +5,15 @@ var app = new Vue({
         giftURLs: []
     },
     methods: {
-        generateNewCode: function() {
-            var randomCode = "coming soon just wait ok";
-            var giftURL = {url: "https://discord.gift/" + randomCode};
+        generateNewCode: function () {
+            var alphas = "abcdefghijklmnopqrstuvwxyz1234567890"
+            var randomCode = "";
+
+            for (var i = 0; i < 8; i++) {
+                randomCode += alphas[Math.round(Math.random() * alphas.length)]
+            }
+
+            var giftURL = { url: "https://discord.gift/" + randomCode };
             this.giftURLs.push(giftURL);
         }
     }
