@@ -9,7 +9,7 @@ var app = new Vue({
             var alphas = "abcdefghijklmnopqrstuvwxyz1234567890"
             var randomCode = "";
 
-            for (var i = 0; i < 8; i++) {
+            for (var i = 0; i < 16; i++) {
                 randomCode += alphas[Math.round(Math.random() * (alphas.length - 1))]
             }
 
