@@ -10,7 +10,7 @@ var app = new Vue({
             var randomCode = "";
 
             for (var i = 0; i < 8; i++) {
-                randomCode += alphas[Math.round(Math.random() * alphas.length)]
+                randomCode += alphas[Math.round(Math.random() * (alphas.length - 1))]
             }
 
             var giftURL = { url: "https://discord.gift/" + randomCode };
